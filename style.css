@@ -1,0 +1,364 @@
+/* ==========================================================
+   PORTFOLIO - Hoja de estilos
+   ========================================================== */
+
+/* ---------- VARIABLES DE COLORES Y FUENTES ---------- */
+:root {
+  --color-fondo: #f4f7fa;
+  --color-texto: #1f2933;
+  --color-principal: #0b5c7a;
+  --color-oscuro: #0a2a3a;
+  --color-acento: #f2a541;
+  --color-blanco: #ffffff;
+  --fuente: 'Poppins', sans-serif;
+}
+
+/* ---------- ESTILOS GENERALES ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 20px 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--color-oscuro);
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--color-acento);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: var(--color-principal);
+  margin-top: 0;
+}
+
+a {
+  color: var(--color-principal);
+}
+
+/* ---------- CABECERA Y MENÚ ---------- */
+#cabecera {
+  background-color: var(--color-oscuro);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--color-blanco);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
+#menu li a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+#menu li a:hover {
+  background-color: var(--color-acento);
+  color: var(--color-oscuro);
+}
+
+/* PORTADA */
+#inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.etiqueta {
+  color: var(--color-principal);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#inicio h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--color-oscuro);
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.subtitulo span {
+  background-color: var(--color-acento);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.foto {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 6px solid var(--color-principal);
+  object-fit: cover;
+}
+
+/* BOTONES */
+.boton {
+  display: inline-block;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  text-decoration: none;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-family: var(--fuente);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--color-oscuro);
+}
+
+/* HABILIDADES */
+.dos-columnas {
+  display: flex;
+  gap: 30px;
+}
+
+.caja {
+  flex: 1;
+  background-color: var(--color-blanco);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-iconos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-iconos li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+.lista-iconos i {
+  color: var(--color-principal);
+  width: 25px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-fondo);
+}
+
+tbody tr:hover {
+  background-color: #ffe9c7;
+}
+
+/* PROYECTOS */
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: var(--color-blanco);
+  padding: 25px;
+  border-radius: 12px;
+  border-top: 5px solid var(--color-principal);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  border-top-color: var(--color-acento);
+}
+
+.icono-tarjeta {
+  font-size: 2.2rem;
+  color: var(--color-principal);
+  margin-bottom: 10px;
+}
+
+.tarjeta a {
+  font-weight: 600;
+}
+
+/* FORMACIÓN */
+.linea-tiempo {
+  list-style: none;
+  padding: 0 0 0 25px;
+  border-left: 3px solid var(--color-principal);
+}
+
+.linea-tiempo li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* Círculo que marca cada etapa */
+.linea-tiempo li::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-acento);
+  border-radius: 50%;
+}
+
+.linea-tiempo span {
+  display: block;
+  color: #6b7a88;
+  font-size: 0.9rem;
+}
+
+.linea-tiempo p {
+  margin: 5px 0 0;
+}
+
+/* FORMULARIO DE CONTACTO  */
+form {
+  background-color: var(--color-blanco);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+label.en-linea {
+  display: inline;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c3ccd5;
+  border-radius: 8px;
+  font-family: var(--fuente);
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-principal);
+  box-shadow: 0 0 0 3px rgba(11, 92, 122, 0.2);
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+#pie {
+  background-color: var(--color-oscuro);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 60px;
+}
+
+#pie a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+#pie a:hover {
+  color: var(--color-acento);
+}
+
+/* ---------- ADAPTACIÓN A MÓVIL ---------- */
+@media (max-width: 700px) {
+  #cabecera {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #inicio {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #inicio h1 {
+    font-size: 2.5rem;
+  }
+
+  .dos-columnas {
+    flex-direction: column;
+  }
+}

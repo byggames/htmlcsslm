@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personal de [Tu nombre], alumno de 1º de ASIR">
+  <title>Portfolio · Iker Repullo</title>
+
+  <!-- Fuente de Google Fonts e iconos Font Awesome 4 -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- CABECERA Y MENÚ  -->
+  <header id="cabecera">
+    <a href="#inicio" class="logo">Iker Repullo</a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section id="inicio">
+      <div class="portada-texto">
+        <p class="etiqueta">Hola, soy</p>
+        <h1>Iker Repullo</h1>
+        <p class="subtitulo">Estudiante de <span>1º de ASIR</span> · Administración de Sistemas Informáticos en Red</p>
+        <a href="#proyectos" class="boton">Ver mis proyectos <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+      </div>
+      <img src="img/perfil.svg" alt="Foto de perfil" class="foto">
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Apasionado de la informática desde que tengo memoria, siempre tengo curiosidad sobre como funcionan las cosas.
+      </p>
+      <p>
+        Actualmente me estoy formando como <strong>Administrador de Sistemas Informáticos en Red</strong>. 
+      </p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="dos-columnas">
+
+        <div class="caja">
+          <h3>Lo que sé hacer</h3>
+          <ul class="lista-iconos">
+            <li><i class="fa fa-html5" aria-hidden="true"></i> HTML5: estructura, listas, tablas y formularios</li>
+            <li><i class="fa fa-server" aria-hidden="true"></i> Mantenimiento de servicios y servidores</li>
+            <li><i class="fa fa-desktop" aria-hidden="true"></i> Instalación de sistemas operativos y máquinas virtuales, mantenimiento e instalación de software</li>
+            <li><i class="fa fa-sitemap" aria-hidden="true"></i> Conocimiento avanzado sobre Redes</li>
+            <li><i class="fa fa-database" aria-hidden="true"></i> Bases de datos: modelo relacional</li>
+          </ul>
+        </div>
+
+        <div class="caja">
+          <h3>Nivel orientativo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Medio</td>
+              </tr>
+              <tr>
+                <td>Docker</td>
+                <td>Iniciando</td>
+              </tr>
+              <tr>
+                <td>Servicios</td>
+                <td>Conocimientos amplios</td>
+              </tr>
+              <tr>
+                <td>VirtualBox</td>
+                <td>Medio</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="rejilla">
+
+        <article class="tarjeta">
+          <i class="fa fa-gamepad icono-tarjeta" aria-hidden="true"></i>
+          <h3>Gestura Drive</h3>
+          <p>Prototipo de vehículo dirigido en miniatura a través de los gestos de una mano</p>
+          <a href="https://github.com/byggames/GesturaDrive">Ver proyecto</a>
+        </article>
+
+        <article class="tarjeta">
+          <i class="fa fa-share-alt icono-tarjeta" aria-hidden="true"></i>
+          <h3>HomeLab</h3>
+          <p>Futuro proyecto usando un mini PC como servidor Proxmox y virtualizar servicios como Nextcloud e Imnich</p>
+          <a href="#">Ver proyecto</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section id="formacion">
+      <h2>Formación</h2>
+      <ol class="linea-tiempo">
+        <li>
+          <strong>CFGS Administrador de Sistemas Informáticos en Red</strong>
+          <span>2026 - Actualidad</span>
+          <p>Programación web, sistemas operativos, redes y bases de datos.</p>
+        </li>
+        <li>
+          <strong>Prácticas Laborales CFGM</strong>
+          <span>Mayo 2026 - Junio 2026</span>
+          <p>Mis prácticas laborales fueron en un colegio, estuve dando mantenimiento a los equipos del centro y asesoramiento al profesorado.</p>
+        </li>
+
+        <li>
+          <strong>CFGM Sistemas Microinformáticos y Redes</strong>
+          <span>2024 - 2026</span>
+          <p>Aprendí sobre redes locales y mantenimiento de equipos, además de aprender sobre servidores y servicios.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo">
+          <option value="duda">Tengo una duda</option>
+          <option value="proyecto">Propuesta de proyecto</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+        <p>
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto" class="en-linea">Acepto la política de privacidad</label>
+        </p>
+
+        <input type="submit" value="Enviar mensaje" class="boton">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer id="pie">
+    <p>
+      <a href="https://github.com/byggames"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      <a href="https://linkedin.com/in/ikerrep"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a href="mailto:ikerrepullosanchez@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Correo</a>
+    </p>
+    <p>&copy; 2026 Iker Repullo · Portfolio</p>
+  </footer>
+
+</body>
+
+</html>
