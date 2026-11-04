@@ -7,12 +7,12 @@
   <meta name="description" content="Portfolio personal de [Tu nombre], alumno de 1º de ASIR">
   <title>Portfolio · Iker Repullo</title>
 
-  <!-- Fuente de Google Fonts e iconos Font Awesome 4 -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+  <!-- Iconos Font Awesome 4 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Hoja de estilos propia -->
   <link rel="stylesheet" href="style.css">
+  <link rel="alternate stylesheet" href="style-alternativo.css" title="Estilo alternativo">
 </head>
 
 <body>
@@ -29,9 +29,13 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    <button type="button" id="cambiar-estilo" class="boton-estilo" aria-pressed="false">
+      <i class="fa fa-adjust" aria-hidden="true"></i> Estilo alternativo
+    </button>
   </header>
 
-  <main>
+  <div class="layout">
+    <main>
 
     <!-- PORTADA -->
     <section id="inicio">
@@ -178,7 +182,25 @@
       </form>
     </section>
 
-  </main>
+    </main>
+
+    
+    <aside id="barra-feeds" aria-labelledby="feeds-titulo">
+      <h2 id="feeds-titulo">Suscríbete</h2>
+      <p>Recibe las novedades del portfolio desde tu lector favorito.</p>
+      <div class="enlaces-feeds">
+        <a href="rss.xml" type="application/rss+xml">
+          <i class="fa fa-rss" aria-hidden="true"></i>
+          <span>Canal RSS</span>
+        </a>
+        <a href="atom.xml" type="application/atom+xml">
+          <i class="fa fa-rss-square" aria-hidden="true"></i>
+          <span>Canal Atom</span>
+        </a>
+      </div>
+    </aside>
+
+  </div>
 
   <!-- PIE DE PÁGINA -->
   <footer id="pie">
@@ -190,6 +212,19 @@
     <p>&copy; 2026 Iker Repullo · Portfolio</p>
   </footer>
 
+  <script>
+    const botonEstilo = document.getElementById('cambiar-estilo');
+    const hojaAlternativa = document.querySelector('link[title="Estilo alternativo"]');
+
+    botonEstilo.addEventListener('click', () => {
+      const estiloAlternativoActivo = hojaAlternativa.disabled;
+      hojaAlternativa.disabled = !estiloAlternativoActivo;
+      botonEstilo.setAttribute('aria-pressed', String(!estiloAlternativoActivo));
+      botonEstilo.lastChild.textContent = estiloAlternativoActivo
+        ? ' Estilo alternativo'
+        : ' Estilo principal';
+    });
+  </script>
 </body>
 
 </html>

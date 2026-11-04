@@ -1,0 +1,103 @@
+/* ==========================================================
+   PORTFOLIO - Estilo alternativo
+   Se carga como hoja de estilos alternativa desde index.html.
+   ========================================================== */
+
+:root {
+  --color-fondo: #181522;
+  --color-texto: #eee9f8;
+  --color-principal: #b692f6;
+  --color-oscuro: #f7f2ff;
+  --color-acento: #f59eaf;
+  --color-blanco: #272136;
+  --color-texto-cabecera: #fff8ff;
+  --color-fondo-cabecera: #100d18;
+  --fuente: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 10%, #332451 0, transparent 35%),
+    var(--color-fondo);
+  color: var(--color-texto);
+}
+
+#cabecera {
+  background-color: var(--color-fondo-cabecera);
+  border-bottom: 1px solid #493667;
+}
+
+#cabecera .logo,
+#cabecera #menu li a,
+#cabecera .boton-estilo {
+  color: var(--color-texto-cabecera);
+}
+
+#cabecera .boton-estilo {
+  border-color: var(--color-acento);
+}
+
+#menu li a:hover,
+.boton:hover,
+#cabecera .boton-estilo:hover,
+#cabecera .boton-estilo[aria-pressed="true"] {
+  background-color: var(--color-acento);
+  color: #28182e;
+}
+
+#inicio h1,
+h2 {
+  color: var(--color-oscuro);
+}
+
+.foto {
+  border-color: var(--color-acento);
+  box-shadow: 0 0 0 8px rgba(245, 158, 175, 0.15);
+}
+
+.caja,
+.tarjeta,
+form,
+#barra-feeds {
+  background-color: var(--color-blanco);
+  border: 1px solid #493667;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta {
+  border-top: 5px solid var(--color-acento);
+}
+
+.tarjeta:hover {
+  border-top-color: var(--color-principal);
+}
+
+th {
+  background-color: #66459a;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #322943;
+}
+
+tbody tr:hover {
+  background-color: #49304b;
+}
+
+#barra-feeds {
+  color: var(--color-texto);
+}
+
+#pie {
+  background-color: var(--color-fondo-cabecera);
+}
+
+#pie a {
+  color: var(--color-texto-cabecera);
+}
+
+@media (max-width: 700px) {
+  #barra-feeds {
+    margin: 0 20px;
+  }
+}

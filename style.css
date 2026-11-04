@@ -10,7 +10,7 @@
   --color-oscuro: #0a2a3a;
   --color-acento: #f2a541;
   --color-blanco: #ffffff;
-  --fuente: 'Poppins', sans-serif;
+  --fuente: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* ---------- ESTILOS GENERALES ---------- */
@@ -28,6 +28,15 @@ body {
   color: var(--color-texto);
   background-color: var(--color-fondo);
   line-height: 1.6;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 25px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 section {
@@ -48,6 +57,47 @@ h2 {
 h3 {
   color: var(--color-principal);
   margin-top: 0;
+}
+
+#barra-feeds {
+  position: sticky;
+  top: 90px;
+  margin: 70px 0 0 20px;
+  padding: 22px;
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#barra-feeds h2 {
+  font-size: 1.35rem;
+  margin: 0 0 10px;
+}
+
+.enlaces-feeds {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.enlaces-feeds a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: var(--color-fondo);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.enlaces-feeds a:hover {
+  color: var(--color-oscuro);
+  background-color: var(--color-acento);
+}
+
+.enlaces-feeds i {
+  font-size: 1.25rem;
 }
 
 a {
@@ -89,6 +139,23 @@ a {
 }
 
 #menu li a:hover {
+  background-color: var(--color-acento);
+  color: var(--color-oscuro);
+}
+
+.boton-estilo {
+  background-color: transparent;
+  color: var(--color-blanco);
+  border: 1px solid var(--color-acento);
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-family: var(--fuente);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.boton-estilo:hover,
+.boton-estilo[aria-pressed="true"] {
   background-color: var(--color-acento);
   color: var(--color-oscuro);
 }
@@ -339,6 +406,11 @@ textarea:focus {
 
 /* ---------- ADAPTACIÓN A MÓVIL ---------- */
 @media (max-width: 700px) {
+  .layout {
+    display: block;
+    padding: 0;
+  }
+
   #cabecera {
     flex-direction: column;
     gap: 10px;
@@ -347,6 +419,10 @@ textarea:focus {
   #menu {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .boton-estilo {
+    margin-bottom: 5px;
   }
 
   #inicio {
@@ -360,5 +436,10 @@ textarea:focus {
 
   .dos-columnas {
     flex-direction: column;
+  }
+
+  #barra-feeds {
+    position: static;
+    margin: 20px;
   }
 }
