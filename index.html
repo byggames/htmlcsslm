@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personal de [Tu nombre], alumno de 1º de ASIR">
+  <title>Portfolio · [Tu nombre]</title>
+
+  <!-- Fuente de Google Fonts e iconos Font Awesome 4 -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============ CABECERA Y MENÚ ============ -->
+  <header id="cabecera">
+    <a href="#inicio" class="logo">[Tu nombre]</a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ PORTADA ============ -->
+    <section id="inicio">
+      <div class="portada-texto">
+        <p class="etiqueta">Hola, soy</p>
+        <h1>[Tu nombre]</h1>
+        <p class="subtitulo">Estudiante de <span>1º de ASIR</span> · Administración de Sistemas Informáticos en Red</p>
+        <a href="#proyectos" class="boton">Ver mis proyectos <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+      </div>
+      <img src="img/perfil.svg" alt="Foto de perfil" class="foto">
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Escribe aquí una breve presentación: quién eres, qué estudias y qué te gusta de la informática.
+        Puedes <strong>resaltar</strong> palabras importantes y <em>enfatizar</em> otras.
+      </p>
+      <p>
+        Segundo párrafo: qué quieres conseguir con el ciclo y en qué te gustaría trabajar.
+      </p>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="dos-columnas">
+
+        <div class="caja">
+          <h3>Lo que sé hacer</h3>
+          <ul class="lista-iconos">
+            <li><i class="fa fa-html5" aria-hidden="true"></i> HTML5: estructura, listas, tablas y formularios</li>
+            <li><i class="fa fa-css3" aria-hidden="true"></i> CSS3: selectores, variables y menús</li>
+            <li><i class="fa fa-desktop" aria-hidden="true"></i> Instalación de sistemas operativos y máquinas virtuales</li>
+            <li><i class="fa fa-sitemap" aria-hidden="true"></i> Redes: conceptos básicos de CCNA</li>
+            <li><i class="fa fa-database" aria-hidden="true"></i> Bases de datos: modelo relacional</li>
+          </ul>
+        </div>
+
+        <div class="caja">
+          <h3>Nivel orientativo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Medio</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Medio</td>
+              </tr>
+              <tr>
+                <td>Bootstrap</td>
+                <td>Básico</td>
+              </tr>
+              <tr>
+                <td>VirtualBox</td>
+                <td>Medio</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="rejilla">
+
+        <article class="tarjeta">
+          <i class="fa fa-gamepad icono-tarjeta" aria-hidden="true"></i>
+          <h3>Mundo Consolas</h3>
+          <p>Página sobre videojuegos con carrusel, tarjetas y formulario, hecha con Bootstrap.</p>
+          <a href="#">Ver proyecto</a>
+        </article>
+
+        <article class="tarjeta">
+          <i class="fa fa-share-alt icono-tarjeta" aria-hidden="true"></i>
+          <h3>Redes sociales</h3>
+          <p>Ejercicio de CSS con fuentes de Google, iconos y efectos al pasar el ratón.</p>
+          <a href="#">Ver proyecto</a>
+        </article>
+
+        <article class="tarjeta">
+          <i class="fa fa-cutlery icono-tarjeta" aria-hidden="true"></i>
+          <h3>Restaurante</h3>
+          <p>Formulario HTML con distintos tipos de campos, etiquetas y botones.</p>
+          <a href="#">Ver proyecto</a>
+        </article>
+
+        <article class="tarjeta">
+          <i class="fa fa-film icono-tarjeta" aria-hidden="true"></i>
+          <h3>Listas y multimedia</h3>
+          <p>Listas ordenadas y sin ordenar, con audio y vídeo incrustados.</p>
+          <a href="#">Ver proyecto</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ FORMACIÓN ============ -->
+    <section id="formacion">
+      <h2>Formación</h2>
+      <ol class="linea-tiempo">
+        <li>
+          <strong>CFGS ASIR · 1º curso</strong>
+          <span>Año actual</span>
+          <p>Programación web, sistemas operativos, redes y bases de datos.</p>
+        </li>
+        <li>
+          <strong>Estudios anteriores</strong>
+          <span>Años</span>
+          <p>Escribe aquí tu formación previa.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo">
+          <option value="duda">Tengo una duda</option>
+          <option value="proyecto">Propuesta de proyecto</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+        <p>
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto" class="en-linea">Acepto la política de privacidad</label>
+        </p>
+
+        <input type="submit" value="Enviar mensaje" class="boton">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer id="pie">
+    <p>
+      <a href="#"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Correo</a>
+    </p>
+    <p>&copy; 2026 [Tu nombre] · Portfolio de Programación web</p>
+  </footer>
+
+</body>
+
+</html>
