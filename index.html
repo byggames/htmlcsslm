@@ -12,7 +12,7 @@
 
   <!-- Hoja de estilos propia -->
   <link rel="stylesheet" href="style.css">
-  <link rel="alternate stylesheet" href="style-alternativo.css" title="Estilo alternativo">
+  <link rel="stylesheet" href="style-alternativo.css" id="estilo-alternativo" disabled>
 </head>
 
 <body>
@@ -30,7 +30,8 @@
       </ul>
     </nav>
     <button type="button" id="cambiar-estilo" class="boton-estilo" aria-pressed="false">
-      <i class="fa fa-adjust" aria-hidden="true"></i> Estilo alternativo
+      <i class="fa fa-adjust" aria-hidden="true"></i>
+      <span id="texto-estilo">Estilo alternativo</span>
     </button>
   </header>
 
@@ -214,15 +215,16 @@
 
   <script>
     const botonEstilo = document.getElementById('cambiar-estilo');
-    const hojaAlternativa = document.querySelector('link[title="Estilo alternativo"]');
+    const hojaAlternativa = document.getElementById('estilo-alternativo');
+    const textoEstilo = document.getElementById('texto-estilo');
 
     botonEstilo.addEventListener('click', () => {
-      const estiloAlternativoActivo = hojaAlternativa.disabled;
-      hojaAlternativa.disabled = !estiloAlternativoActivo;
+      const estiloAlternativoActivo = !hojaAlternativa.disabled;
+      hojaAlternativa.disabled = estiloAlternativoActivo;
       botonEstilo.setAttribute('aria-pressed', String(!estiloAlternativoActivo));
-      botonEstilo.lastChild.textContent = estiloAlternativoActivo
-        ? ' Estilo alternativo'
-        : ' Estilo principal';
+      textoEstilo.textContent = estiloAlternativoActivo
+        ? 'Estilo alternativo'
+        : 'Estilo principal';
     });
   </script>
 </body>
