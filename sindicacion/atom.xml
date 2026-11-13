@@ -1,0 +1,26 @@
+<feed xml:lang="es" xml:base="http://127.0.0.1:5500/sindicacion/atom.xml">
+<id>http://127.0.0.1:5500/sindicacion/atom.xml</id>
+<title>Portfolio de Iker en Atom</title>
+<updated>2021-12-21T19:06:00+01:00</updated>
+<link rel="alternate" href="http://127.0.0.1:5500/sindicacion/atom.xml"/>
+<author>
+<name>Iker Repullo</name>
+<email>resaik_aliesma@iesmedinaazahara.es</email>
+</author>
+<category term="Portfolio de Iker"/>
+<entry>
+<id>
+http://127.0.0.1:5500/sindicacion/atom.xml
+</id>
+<title>Gestura Drive</title>
+<update>2021-02-12T18:30:00+01:00</update>
+<author>
+<name>Iker Repullo</name>
+<email>resaik_aliesma@iesmedinaazahara.es</email>
+</author>
+<summary>
+Prototipo de vehículo dirigido en miniatura a través de los gestos de una mano
+</summary>
+<link rel="alternate" href="https://byggames.github.io/htmlcsslm/#proyectos"/>
+</entry>
+</feed>
