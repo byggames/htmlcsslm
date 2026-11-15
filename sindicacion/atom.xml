@@ -1,25 +1,41 @@
-<feed xml:lang="es" xml:base="http://127.0.0.1:5500/sindicacion/atom.xml">
-<id>http://127.0.0.1:5500/sindicacion/atom.xml</id>
-<title>Portfolio de Iker en Atom</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es" xml:base="https://byggames.github.io/htmlcsslm">
+<id>https://byggames.github.io/htmlcsslm/</id>
+<title>Portfolio de Iker Repullo</title>
 <updated>2021-12-21T19:06:00+01:00</updated>
-<link rel="alternate" href="http://127.0.0.1:5500/sindicacion/atom.xml"/>
+<link rel="self" href="https://byggames.github.io/htmlcsslm/sindicacion/atom.xml"/>
 <author>
-<name>Iker Repullo</name>
+<name>Iker Repullo Sanchez</name>
 <email>resaik_aliesma@iesmedinaazahara.es</email>
 </author>
-<category term="Portfolio de Iker"/>
+<category term="Proyectos"/>
 <entry>
 <id>
-http://127.0.0.1:5500/sindicacion/atom.xml
+https://byggames.github.io/htmlcsslm/index.html
 </id>
 <title>Gestura Drive</title>
-<update>2021-02-12T18:30:00+01:00</update>
+<updated>2021-02-12T18:30:00+01:00</updated>
 <author>
-<name>Iker Repullo</name>
+<name>Iker Repullo Sanchez</name>
 <email>resaik_aliesma@iesmedinaazahara.es</email>
 </author>
 <summary>
-Prototipo de vehículo dirigido en miniatura a través de los gestos de una mano
+ Prototipo de vehículo dirigido mediante los gestos de una mano.
+</summary>
+<link rel="alternate" href="https://byggames.github.io/gesturadrive"/>
+</entry>
+<entry>
+<id>
+https://byggames.github.io/htmlcsslm/index.htmlº
+</id>
+<title>HomeLab</title>
+<updated>2026-11-13T18:30:00+01:00</updated>
+<author>
+<name>Iker Repullo Sanchez</name>
+<email>resaik_aliesma@iesmedinaazahara.es</email>
+</author>
+<summary>
+ Futuro proyecto usando un mini PC como servidor Proxmox y virtualizar servicios como Nextcloud e Imnich
 </summary>
 <link rel="alternate" href="https://byggames.github.io/htmlcsslm/#proyectos"/>
 </entry>
