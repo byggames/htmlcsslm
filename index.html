@@ -188,21 +188,84 @@
 
     </main>
 
-    
-    <aside id="barra-feeds" aria-labelledby="feeds-titulo">
-      <h2 id="feeds-titulo">Suscríbete</h2>
-      <p>Recibe las novedades del portfolio desde tu lector favorito.</p>
-      <div class="enlaces-feeds">
-        <a href="./sindicacion/rss.xml" type="application/rss+xml">
-          <i class="fa fa-rss" aria-hidden="true"></i>
-          <span>Canal RSS</span>
-        </a>
-        <a href="./sindicacion/atom.xml" type="application/atom+xml">
-          <i class="fa fa-rss-square" aria-hidden="true"></i>
-          <span>Canal Atom</span>
-        </a>
+    <!--LO DE LA BARRA LATERAL-->
+    <div id="barra-feeds" aria-labelledby="feeds-titulo">
+      <h2 id="feeds-titulo">Contenido destacado</h2>
+
+      <div class="video-lateral">
+        <iframe src="https://www.youtube.com/embed/AdoIA7CJ1jQ"
+          title="Gestura Drive"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
       </div>
-    </aside>
+
+      <section class="bloque-lateral" aria-labelledby="estado-titulo">
+        <h3 id="estado-titulo"><i class="fa fa-check-circle" aria-hidden="true"></i> Estado actual</h3>
+        <p>Estoy formándome en ASIR y desarrollando proyectos de sistemas y redes.</p>
+        <ul>
+          <li>Aprendiendo administración de servidores</li>
+          <li>Preparando nuevos proyectos</li>
+        </ul>
+      </section>
+
+      <section class="bloque-lateral" aria-labelledby="rapidos-titulo">
+        <h3 id="rapidos-titulo"><i class="fa fa-link" aria-hidden="true"></i> Accesos rápidos</h3>
+        <nav class="enlaces-rapidos" aria-label="Accesos rápidos">
+          <a href="#proyectos"><i class="fa fa-code" aria-hidden="true"></i> Ver proyectos</a>
+          <a href="#formacion"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Mi formación</a>
+          <a href="#contacto"><i class="fa fa-envelope" aria-hidden="true"></i> Contactar</a>
+        </nav>
+      </section>
+
+      <section class="bloque-lateral" aria-labelledby="tecnologias-titulo">
+        <h3 id="tecnologias-titulo"><i class="fa fa-wrench" aria-hidden="true"></i> Tecnologías</h3>
+        <div class="etiquetas-tecnologias" aria-label="Tecnologías utilizadas">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Linux</span>
+          <span>Redes</span>
+          <span>VirtualBox</span>
+          <span>Bases de datos</span>
+        </div>
+      </section>
+
+      <section class="bloque-lateral" aria-labelledby="intereses-titulo">
+        <h3 id="intereses-titulo"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Próximos objetivos</h3>
+        <p>Profundizar en Docker, automatización con scripts y la administración de servidores Linux.</p>
+      </section>
+
+      <section class="bloque-lateral" aria-labelledby="redes-titulo">
+        <h3 id="redes-titulo"><i class="fa fa-share-alt" aria-hidden="true"></i> Redes profesionales</h3>
+        <nav class="enlaces-sociales" aria-label="Perfiles profesionales">
+          <a href="https://github.com/byggames" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/ikerrep" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+        </nav>
+      </section>
+
+      <section class="bloque-lateral" aria-labelledby="suscripcion-titulo">
+        <h3 id="suscripcion-titulo">Suscríbete</h3>
+        <p>Recibe las novedades del portfolio desde tu lector favorito.</p>
+        <div class="enlaces-feeds">
+          <a href="./sindicacion/rss.xml" type="application/rss+xml">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+            <span>Canal RSS</span>
+          </a>
+          <a href="./sindicacion/atom.xml" type="application/atom+xml">
+            <i class="fa fa-rss-square" aria-hidden="true"></i>
+            <span>Canal Atom</span>
+          </a>
+        </div>
+      </section>
+    </div>
 
   </div>
 
